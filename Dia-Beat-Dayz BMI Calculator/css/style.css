@@ -1,0 +1,20 @@
+#tip {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 175px;
+    left: 250px;
+    transform: rotate(-50deg);
+}
+
+#result {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+    display: block;
+    font-size: 25px;
+}
+
+span {
+    font-weight: bold;
+}
