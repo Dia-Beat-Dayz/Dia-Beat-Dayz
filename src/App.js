@@ -3,7 +3,8 @@ import bmi from './bmi.svg';
 import bsl from './bsl.svg';
 import quiz from './quiz.svg';
 import info from './info.svg';
-import pfp from './pfp.svg'
+import pfp from './pfp.svg';
+
 
 import './App.css';
 
@@ -13,22 +14,22 @@ function App(){
       <div className="App">
         <header className="App-header">
           <div className="Dia-logo">
-            <img src={logo} className="App-logo" alt="logo" />
+            <img src={logo} className="App-logo" alt="logo" onClick={window.open("https://www.w3schools.com")}/>
           </div>
           <div className="Dia-header">
-            <img src={bmi} className="Bmi-logo" alt="bmi" />
+            <img src={bmi} className="Bmi-logo" alt="bmi" onClick={window.open("https://www.w3schools.com")} />
           </div>
           <div className="Dia-header">
-            <img src={bsl} className="Bsl-logo" alt="bsl" />
+            <img src={bsl} className="Bsl-logo" alt="bsl" onClick={window.open("https://www.w3schools.com")}/>
           </div>
           <div className="Dia-header">
-            <img src={quiz} className="Quiz-logo" alt="quiz" />
+            <img src={quiz} className="Quiz-logo" alt="quiz" onClick={window.open("https://www.w3schools.com")}/>
           </div>
           <div className="Dia-header">
-            <img src={info} className="Info-logo" alt="info" />
+            <img src={info} className="Info-logo" alt="info" onClick={window.open("https://www.w3schools.com")} />
           </div>
           <div className="Dia-header">
-            <img src={pfp} className="Pfp-logo" alt="pfp" />
+            <img src={pfp} className="Pfp-logo" alt="pfp" onClick={window.open("https://www.w3schools.com")} />
           </div>
         </header>
         <body>
