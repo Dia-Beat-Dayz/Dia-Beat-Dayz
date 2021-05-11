@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/index.css">
+<head>
+    <div class="Dia-logo">
+        <img src="./logo.svg" alt="Logo" width="250" height="250">
+    </div>
+
+    <!-- Required meta tags -->
+        <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <!-- Bootstrap CSS -->
+        <title>Blood Sugar Levels</title>
+</head>
+<body>
+<h1>Blood Sugar Levels</h1>
+<nav>
+
+</nav>
+
+<div class="container">
+    <form id="frm" style="padding: 10px;">
+        <div class="box1" > <br>
+            Enter First Number : <br>
+            <input type="text" id="Text1" name="TextBox1" placeholder="Enter Morning Reading">
+            <input type="button" name="clickbtn" value="Check Reading" onclick="check_mbsl()">
+            <br>
+            Result : <br>
+            <input type="text" id="morningbsl" name="TextBox4">
+            <br>
+        </div>
+        <br><br>
+        <div class="box2">
+            Enter Second Number : <br>
+            <input type="text" id="Text2" name="TextBox2" placeholder="Enter Afternoon Reading">
+            <input type="button" name="clickbtn" value="Check Reading" onclick="check_absl()">
+            <br>
+            Result : <br>
+            <input type="text" id="afternoonbsl" name="TextBox4">
+            <br>
+        </div>
+        <br><br>
+        <div class="box3">
+            Enter Third Number : <br>
+            <input type="text" id="Text3" name="TextBox3" placeholder="Enter Night Reading">
+            <input type="button" name="clickbtn" value="Check Reading" onclick="check_nbsl()">
+            <br>
+            Result : <br>
+            <input type="text" id="nightbsl" name="TextBox3">
+            <br>
+        </div>
+        <br><br>
+        <div class="box4">
+            Result : <br>
+            <input type="text" id="txtresult" name="TextBox4">
+            <br>
+            <input type="button" name="clickbtn" value="Daily Average" onclick="avg_bsl()">
+        </div>
+    </form>
+    <div id="result"></div>
+</div>
+<main>
+
+</main>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./index.js"></script>
+</body>
+</html>

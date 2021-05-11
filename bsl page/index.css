@@ -1,0 +1,78 @@
+.box1 {
+    height: 125px;
+    background: #E8C2C2;
+    padding: 10px;
+    flex-direction: row;
+}
+.box2 {
+     height: 125px;
+     background: #E8C2C2;
+     padding: 10px;
+     flex-direction: row;
+ }
+.box3 {
+    height: 125px;
+    background: #E8C2C2;
+    padding: 10px;
+    flex-direction: row;
+}
+.box4 {
+    height: 125px;
+    background: #E8C2C2;
+    padding: 10px;
+    flex-direction: row;
+}
+.container {
+    margin: auto;
+    border: 3px solid #E8C2C2;
+    padding: 20px;
+    width: 50vmin;
+}
+
+#tip {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 175px;
+    left: 250px;
+    transform: rotate(-50deg);
+}
+
+#txtresult {
+    color: #8800ff;
+    text-align: center;
+    margin-top: 20px;
+    display: block;
+    font-size: 25px;
+}
+#morningbsl {
+    text-align: center;
+    display: block;
+    font-size: 25px;
+}
+#afternoonbsl {
+    text-align: center;
+    display: block;
+    font-size: 25px;
+}
+#nightbsl {
+    text-align: center;
+    display: block;
+    font-size: 25px;
+}
+span {
+    font-weight: bold;
+}
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
