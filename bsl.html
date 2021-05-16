@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DiaBeatDayz - Blood Sugar Level Checker</title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/bsl.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- Navigation Start -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./image/Dia_-_BEAT_-_Dayz-removebg-preview.png" alt="" width="100" height="100">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-centre">
+        <div class="collapse navbar-collapse py-3" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link px-5" aria-current="page" href="home.html">Home</a>
+            <a class="nav-link px-5" href="bmi.html">BMI Calculator</a>
+            <a class="nav-link px-5" href="bsl.html">BSL Calculator</a>
+            <a class="nav-link px-5" href="quiz.html">Diabetes Quiz</a>
+            <a class="nav-link px-5" href="resource.html">Resources</a>
+            <a class="nav-link px-5" href="profile.html" style="color: blue;">
+              <div class="box px-3 py-1 btn btn-outline-primary" style="border: 1px solid blue;">
+                <span class="oi oi-person px-3"></span>Profile
+              </div> 
+            </a>
+            <a class="nav-link" href="#" style="color: blue;">
+              <div class="box px-3 py-1 btn btn-outline-danger" style="border: 1px solid red;">
+                <span class="oi oi-account-login px-3"></span>Login
+              </div> 
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+<!-- Navigation End -->
+<div class="container-fluid my-5">
+  <form class="col-md-4" id="frm" style="padding: 10px;">
+    <h1 class="text-center mb-5">Blood Sugar Level Calculator</h1>
+      <div class="box1 font-weight-bold" >
+          Enter First Number :
+          <input type="text" id="Text1" name="TextBox1" placeholder="Enter Morning Reading">
+          <input type="button" name="clickbtn" value="Check Reading" onclick="check_mbsl()">
+          <br>
+          Result : <br>
+          <input type="text" id="morningbsl" name="TextBox4">
+          <br>
+      </div>
+      <br><br>
+      <div class="box2 font-weight-bold">
+          Enter Second Number :
+          <input type="text" id="Text2" name="TextBox2" placeholder="Enter Afternoon Reading">
+          <input type="button" name="clickbtn" value="Check Reading" onclick="check_absl()">
+          <br>
+          Result : <br>
+          <input type="text" id="afternoonbsl" name="TextBox4">
+          <br>
+      </div>
+      <br><br>
+      <div class="box3 font-weight-bold">
+          Enter Third Number :
+          <input type="text" id="Text3" name="TextBox3" placeholder="Enter Night Reading">
+          <input type="button" name="clickbtn" value="Check Reading" onclick="check_nbsl()">
+          <br>
+          Result : <br>
+          <input type="text" id="nightbsl" name="TextBox3">
+          <br>
+      </div>
+      <br><br>
+      <div class="box4 font-weight-bold">
+          Result :
+          <input type="text" id="txtresult" name="TextBox4">
+          <input type="button" name="clickbtn" value="Daily Average" onclick="avg_bsl()">
+      </div>
+  </form>
+  <div id="result"></div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/bsl.js"></script>
+</body>
+</html>
