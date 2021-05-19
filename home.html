@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link href="./open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
     <title>DiaBeatDayZ</title>
@@ -27,13 +29,13 @@
             <a class="nav-link px-5" href="bsl.html">BSL Calculator</a>
             <a class="nav-link px-5" href="quiz.html">Diabetes Quiz</a>
             <a class="nav-link px-5" href="resource.html">Resources</a>
-            <a class="nav-link px-5" href="profile.html" style="color: blue;">
-              <div class="box px-3 py-1 btn btn-outline-primary" style="border: 1px solid blue;">
+            <a class="nav-link px-5" href="profile.html">
+              <div class="px-3 py-1 our_btn_secondary">
                 <span class="oi oi-person px-3"></span>Profile
               </div> 
             </a>
-            <a class="nav-link" href="#" style="color: blue;">
-              <div class="box px-3 py-1 btn btn-outline-danger" style="border: 1px solid red;">
+            <a class="nav-link" href="login.html">
+              <div class="box px-3 py-1 our_btn_secondary">
                 <span class="oi oi-account-login px-3"></span>Login
               </div> 
             </a>
@@ -45,52 +47,56 @@
 <!-- Navigation End -->
 <!-- Jumbotron Start -->
       <section>
-        
+        <div class="container-fluid px-5 text-center" id="jumbotron">
+          <div class="align-middle h-100" style="padding-top: 30vh; font-size: 1.5em;"> 
+            <p>You can find useful info and links at our resource page</p>
+            <hr class="my-4">
+            <p>Take our quiz and test your knowledge or keep track of your health using our BMI and Blood sugar level calculator.</p>
+            <a class="btn our_btn btn-lg" href="resource.html" role="button">Learn more</a>
+          </div>
+        </div>
       </section>
 <!-- Jumbotron End -->
 <!-- Cards Start -->
-<div class ="col-sm-3">
-<img src="image/Dia - BEAT - Dayz.png" style="align-content: center;"> </div>
       <main class="my-5 px-5">
         <div class="row">
           <!-- BMI Card -->
-          <div class="col-sm-3">
-            <div class="card h-80">
+          <div class="col-md-4">
+            <div class="card h-100">
               <img class="card-img-top h-100" src="./image/bmi.jpg" alt="Card image">
               <div class="card-body">
                 <h4 class="card-title">Body Mass Index Calculator</h4>
                 <p class="card-text">Check you BMI and keep healthy.</p>
-                <a href="bmi.html" class="btn btn-primary">Check BMI Now</a>
+                <a href="bmi.html" class="btn our_btn">Check BMI Now</a>
               </div>
             </div>
           </div>
           <!-- BMI Card End -->
           <!-- BSL Card -->
-          <div class="col-sm-3">
-            <div class="card h-80">
+          <div class="col-md-4">
+            <div class="card h-100">
               <img class="card-img-top h-100" src="./image/bsl.jfif" alt="Card image">
               <div class="card-body">
                 <h4 class="card-title">Blood Sugar Level Calculator</h4>
                 <p class="card-text">Check you BSL and keep healthy.</p>
-                <a href="bsl.html" class="btn btn-primary">Check BSL Now</a>
+                <a href="bsl.html" class="btn our_btn">Check BSL Now</a>
               </div>
             </div>
           </div>
           <!-- BSL Card End-->
           <!-- Quiz Card -->
-          <div class="col-sm-3">
-            <div class="card h-80">
+          <div class="col-md-4">
+            <div class="card h-100">
               <img class="card-img-top h-100" src="./image/quiz.jpg" alt="Card image">
               <div class="card-body">
                 <h4 class="card-title">Diabetes Quiz</h4>
                 <p class="card-text">Test your knowledge on diabetes.</p>
-                <a href="quiz.html" class="btn btn-primary">Take The Quiz</a>
+                <a href="quiz.html" class="btn our_btn">Take The Quiz</a>
               </div>
             </div>
           </div>
           <!-- Quiz Card End-->
           </div>
-        </div>
       </main>
 <!-- Cards End -->
 

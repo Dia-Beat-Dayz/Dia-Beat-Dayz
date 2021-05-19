@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DiaBeatDayz - Login</title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    
+  .boximg {
+    
+    height: 150px;
+    background: #f2f4f4;
+    
+  }
+  .boximg2 {
+    height: 600px;
+    background: #f2f4f4;
+  }
+  .boximg3 {
+    height:40px;
+    width:350px;
+   position:absolute;
+   top:130px;
+    background: white;
+  }
+  
+  </style>
+  
+</head>
+<body>
+   <!-- Navigation Start -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./image/Dia_-_BEAT_-_Dayz-removebg-preview.png" alt="" width="100" height="100">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-centre">
+        <div class="collapse navbar-collapse py-3" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link px-5" aria-current="page" href="home.html">Home</a>
+            <a class="nav-link px-5" href="bmi.html">BMI Calculator</a>
+            <a class="nav-link px-5" href="bsl.html">BSL Calculator</a>
+            <a class="nav-link px-5" href="quiz.html">Diabetes Quiz</a>
+            <a class="nav-link px-5" href="resource.html">Resources</a>
+            <a class="nav-link px-5" href="profile.html">
+              <div class="px-3 py-1 our_btn_secondary">
+                <span class="oi oi-person px-3"></span>Profile
+              </div> 
+            </a>
+            <a class="nav-link" href="login.html">
+              <div class="box px-3 py-1 our_btn_secondary">
+                <span class="oi oi-account-login px-3"></span>Login
+              </div> 
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+<!-- Navigation End -->
+<section class="shadow text-center" id="login">
+    <div class="card" id="loginBox">
+        <div class="card-body">
+            <form>
+                <h1 class="fw-bold">Log In to Your Account:</h1>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style="width: 50%; margin-left: auto; margin-right: auto;">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" style="width: 50%; margin-left: auto; margin-right: auto;">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                </div>
+                <a  href="login.html" style="text-decoration: none;">
+                   <div class="px-3 py-1 our_btn" style="margin-left: auto; margin-right: auto; width: 100px;">Sign In</div>  
+                </a>
+                
+                <h6 style="padding-top: 20px; padding-bottom: 5px;">If you don't have an account, click below to sign up!</h6>
+                <a  href="signup.html" style="text-decoration: none;">
+                    <div class="px-3 py-1 our_btn" style="margin-left: auto; margin-right: auto; width: 100px;">Sign Up</div> 
+                </a>
+                
+              </form>    
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

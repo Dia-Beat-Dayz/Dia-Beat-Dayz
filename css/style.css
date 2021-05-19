@@ -1,3 +1,7 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
 #tip {
     width: 100px;
     height: 100px;
@@ -56,3 +60,112 @@ span {
 .highcharts-data-table tr:hover {
     background: #f1f7ff;
 }
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+  }
+  
+  .btn-primary:focus, .btn-primary.focus {
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+  }
+  
+  .btn-primary.disabled, .btn-primary:disabled {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:active, .btn-primary.active,
+  .show > .btn-primary.dropdown-toggle {
+    background-color: #0069d9;
+    background-image: none;
+    border-color: #0062cc;
+  } 
+
+  .nav-link {
+      font-weight: 500;
+  }
+
+  .nav-link:hover {
+      color: #EF798A !important;
+  }
+
+  #jumbotron {
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../image/jumbo.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 80vh;
+      color: #fff;
+  }
+
+  #login {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 100px;
+  }
+
+  #signup {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+
+  .our_btn {
+    margin: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #F7A9A8;
+    transition: all 0.3s ease;
+    background-color: #F7A9A8;
+    color: #fff;
+  }
+
+  .our_btn:hover {
+    color: #F7A9A8;
+    background-color: #fff;
+  }
+
+  .our_btn_secondary {
+    margin: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #F7A9A8;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    color: #F7A9A8;
+  }
+
+  .our_btn_secondary:hover {
+    color: #fff;
+    background-color: #F7A9A8;
+  }
+
+  .center {
+      margin-left: auto;
+      margin-right: auto;
+  }
