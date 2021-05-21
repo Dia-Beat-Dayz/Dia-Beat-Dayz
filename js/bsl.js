@@ -1,14 +1,3 @@
-//Result is the Average Blood Sugar Level
-//All values here are being considered "Float"
-
-function avg_bsl() {
-    var first_number = parseFloat(document.getElementById("Text1").value).toFixed(2);
-    var second_number = parseFloat(document.getElementById("Text2").value).toFixed(2);
-    var third_number = parseFloat(document.getElementById("Text3").value).toFixed(2);
-    var avg_result = (check_mbsl(result) + check_absl(result) + check_nbsl(result));
-
-    document.getElementById("txtresult").value = avg_result;
-}
 //User Enters Morning Blood Sugar Reading
 function check_mbsl (){
     var first_number = parseFloat(document.getElementById("Text1").value).toFixed(2);
@@ -98,4 +87,16 @@ function check_nbsl (){
         }
     }
     document.getElementById("nightbsl").value = result;
+}
+
+//Result is the Average Blood Sugar Level
+//All values here are being considered "Float"
+
+function avg_bsl() {
+    var first_number = parseFloat(document.getElementById("Text1").value);
+    var second_number = parseFloat(document.getElementById("Text2").value);
+    var third_number = parseFloat(document.getElementById("Text3").value);
+    var avg_result = ((first_number + second_number + third_number)/3);
+
+    document.getElementById("txtresult").value = avg_result;
 }
