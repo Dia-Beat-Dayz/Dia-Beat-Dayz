@@ -5,9 +5,10 @@ function avg_bsl() {
     var first_number = parseFloat(document.getElementById("Text1").value).toFixed(2);
     var second_number = parseFloat(document.getElementById("Text2").value).toFixed(2);
     var third_number = parseFloat(document.getElementById("Text3").value).toFixed(2);
-    var avg_result = (check_mbsl(result) + check_absl(result) + check_nbsl(result));
+    var avg_result = (check_mbsl(result) + check_absl(result) + check_nbsl(result)/3);
 
     document.getElementById("txtresult").value = avg_result;
+    
 }
 //User Enters Morning Blood Sugar Reading
 function check_mbsl (){
